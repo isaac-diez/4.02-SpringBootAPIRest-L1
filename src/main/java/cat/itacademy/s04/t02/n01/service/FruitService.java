@@ -31,7 +31,7 @@ public class FruitService {
                 .orElseThrow(() -> new EmptyFruitListException("Fruit not found with id: " + id));
     }
 
-    public Fruit updateFruitByName(Fruit fruit){
+    public Fruit updateFruit(Fruit fruit){
         return fruitRepo.save(fruit);
     }
 
